@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>邮件</title>
+</head>
+
+<body style="margin: 0;padding:0;">
+    <div style="width:100%;margin:0 auto;padding: 20px;text-align: center;">
+        <span style="font-size: 26px;font-weight:600;">今天是放暑假的第</span>
+        <span style="color: chocolate;font-size:36px;font-weight:bold;">{{ dayData.count }}</span>
+        <span style="font-size: 26px;font-weight:600;">天</span>
+    </div>
+    <p style="text-align:center;">小可耐，今天也要加油喔~</p>
+
+    <div style="width: 100%;margin:0 auto;color:lightsteelblue;text-align:center;">
+        <img src="{{ MojiData.icon }}" alt="天气icon" style="" />
+        <b style="display:block;color:#333;font-size:24px;margin:15px 0;">天气：{{ MojiData.weather }}</b>
+        <span style="display:block;color:#333;font-size:22px;margin:15px 0;">温度：{{ MojiData.temperature }}</span>
+        <span>Tips:{{MojiData.tips}}</span>
+    </div>
+
+    <div style="text-align:center;margin: 35px 0;">
+        <span style="display:block;margin-top:55px;color:#676767;font-size:15px;">
+             ONE·一个
+        </span>
+        <span style="display:block;margin-top:25px;color:#9d9d9d;font-size:22px;">{{ dayData.format }}</span>
+        <img src="{{ OneData.img }}" style="width:100%;margin-top:10px;" alt="今日图片" />
+        <div style="margin: 10px auto;margin-top:10px;">
+            {{ OneData.text }}
+        </div>
+    </div>
+</body>
+
+</html>
